@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAISIKA MEC SKILL SCHOOL</title>
+
+    <style>
+        body {
+            background-color: #eeeeee;
+            font-family: Arial, sans-serif;
+        }
+
+        .form {
+            background-color: white;
+            width: 80%;
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 25px;
+            border: 2px solid black;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 20px;
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        textarea {
+            height: 60px;
+        }
+
+        button {
+            padding: 10px 18px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .official {
+            border-top: 2px dashed black;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .form {
+                width: auto;
+                padding: 15px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .form {
+                width: auto;
+                max-width: none;
+                border: none;
+                margin: 0;
+            }
+
+            button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form">
+
+    <header>
+        <h1>SAISIKA MEC SKILL SCHOOL</h1>
+        <h2>ADMISSION FORM</h2>
+    </header>
+
+    <form action="#" method="post">
+
+        <label for="course">Course Applied For:</label>
+        <input type="text" id="course" name="course">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <hr>
+
+        <h3>APPLICANT'S INFORMATION</h3>
+
+        <label for="fullname">1. Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label>2. Sex:</label>
+        <input type="radio" name="sex" value="Male"> Male
+        <input type="radio" name="sex" value="Female"> Female
+
+        <label for="age">3. Age:</label>
+        <input type="number" id="age" name="age">
+
+        <label for="phone">4. Telephone Number:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="nationality">5. Nationality:</label>
+        <input type="text" id="nationality" name="nationality">
+
+        <label for="state">6. State of Origin:</label>
+        <input type="text" id="state" name="state">
+
+        <label for="town">7. Home Town:</label>
+        <input type="text" id="town" name="town">
+
+        <label for="address">8. Residential Address:</label>
+        <textarea id="address" name="address"></textarea>
+
+        <label for="postal">9. Postal Address:</label>
+        <textarea id="postal" name="postal"></textarea>
+
+        <hr>
+
+        <h3>PARENT'S / GUARDIAN'S INFORMATION</h3>
+
+        <label for="parent">10. Parent's Name:</label>
+        <input type="text" id="parent" name="parent">
+
+        <label for="parentaddress">Parent's Address:</label>
+        <textarea id="parentaddress" name="parentaddress"></textarea>
+
+        <label for="parentphone">Parent's Phone Number:</label>
+        <input type="tel" id="parentphone" name="parentphone">
+
+        <label for="parentemail">Parent's Email Address:</label>
+        <input type="email" id="parentemail" name="parentemail">
+
+        <label for="guardian">11. Name and Address of Guardian:</label>
+        <textarea id="guardian" name="guardian"></textarea>
+
+        <label for="guardianphone">Guardian's Phone Number:</label>
+        <input type="tel" id="guardianphone" name="guardianphone">
+
+        <label for="guardianemail">Guardian's Email Address:</label>
+        <input type="email" id="guardianemail" name="guardianemail">
+
+        <hr>
+
+        <h3>DECLARATION</h3>
+
+        <p>
+            12. I certify that the information supplied on this
+            form is true and correct to the best of my knowledge.
+        </p>
+
+        <label for="signature">Applicant's Signature:</label>
+        <input type="text" id="signature" name="signature">
+
+        <label for="signdate">Date:</label>
+        <input type="date" id="signdate" name="signdate">
+
+        <div class="official">
+
+            <h3>FOR OFFICIAL USE ONLY</h3>
+
+            <label for="amount">Amount Paid:</label>
+            <input type="number" id="amount" name="amount">
+
+            <label for="receipt">Receipt Number:</label>
+            <input type="text" id="receipt" name="receipt">
+
+            <label for="admission">Admission Number:</label>
+            <input type="text" id="admission" name="admission">
+
+            <label for="remarks">Remarks:</label>
+            <textarea id="remarks" name="remarks"></textarea>
+
+            <label for="officialdate">Date:</label>
+            <input type="date" id="officialdate" name="officialdate">
+
+            <label for="officialsignature">Authorised Signature:</label>
+            <input type="text" id="officialsignature"
+                   name="officialsignature">
+
+        </div>
+
+        <button type="submit">Submit Form</button>
+        <button type="reset">Clear Form</button>
+        <button type="button" onclick="window.print()">
+            Print Form
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
